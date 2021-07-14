@@ -1,3 +1,329 @@
-h1{
-    color:red;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Poppins', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Header start here */
+.header{   
+    background-color: #2D25A0;    
+}
+.header-inside{
+    display: flex;
+    padding: 70px 15%;
+    justify-content: space-between;
+}
+.header .header-left{
+    margin-top: 70px;
+}
+.header .header-left h1{
+    width: 485px;
+    height: 230px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    color: #fff;
+    margin-bottom: 27px;
+}
+
+.header .header-left button{
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.header .header-left button:hover{
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 700;
+}
+.header .header-left button:hover i{
+    padding-left: 10px;
+}
+.header .header-right{}
+.header .header-right img{
+    width: 556.01px;
+    height: 438px;
+    
+}
+/* Header section end here */
+
+/* Player section start here */
+.player{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 70px;
+    
+}
+.player .player-section{
+    width: 330px;
+    height: 474px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player .player-section h3{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+}
+.player .player-section p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C;
+}
+.player .player-section img{
+    width: 100%;
+    
+}
+
+
+/* Player section end here */
+
+/* Season start */
+.season-section{
+    display: flex;
+    padding: 50px;
+    background:url('images/season-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.season-section-left img{
+    width:550px;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.season-section-right{
+    padding: 6%;
+    background-position: right;
+    background-repeat: no-repeat; 
+}
+.season-section-right h3{
+    color: red;
+    font-weight: 700;
+    font-size: 35px;
+}
+.season-section-right p{
+    font-size: 16px ;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #6C6C6C;
+}
+.season-link-btn{
+    padding: 15px 30px;
+    background-color: #E02C6D;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.season-link-btn{
+    transition: 0.5s ease-in-out;
+    
+}
+.season-link-btn:hover{
+    background: none;
+    border: 2px solid #E02C6D;
+    color: #E02C6D;
+    font-weight: 700;
+}
+.season-link-btn:hover i{
+    padding-left: 10px;
+}
+/* Season end */
+
+/* story section start */
+.stories{
+    overflow: hidden;
+    margin: 70px 0;
+}
+.story{
+    background: url('images/bg-about.jpg');
+    background-attachment: fixed;
+    background-position-y: top;
+    padding: 10%;
+    overflow: hidden;
+ 
+}
+.story:hover{
+    transform: scale(1.1);
+    transition: transform 2s ease-in-out;
+}
+.story-inside{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.story-head{
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.story-head span{
+    color: red;
+    font-size: 18px;
+}
+.story-details{
+    color: #fff;
+    font-size: 0.9em;
+    letter-spacing: 0.2em;
+    margin-bottom: 30px;
+}
+.story-button{
+    padding: 15px 30px;
+    background-color:  #E02C6D;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+
+}
+/* story section end */
+
+/* Footer section start */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 63px;
+    
+}
+.footer .footer-top{
+
+}
+.footer .footer-top img{
+    width: 483.87px;
+    height: 110px;
+    margin: 15px 0px;
+}
+.footer .footer-middle{
+    margin-bottom: 20px;
+}
+.footer .footer-middle a{
+    text-decoration: none;
+} 
+.footer .footer-middle i{
+    font-size: 20px;
+    margin: 0px 14px;
+    color: #918787;
+}
+
+.footer .footer-bottom{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Footer section end */
+
+
+@media only screen and (max-width: 600px){
+    .header-inside{
+        flex-wrap: wrap;
+    }
+    .header .header-left h1{
+        width: 278px;
+        height: auto;
+        font-size: 36px;
+        margin-bottom: 30px;
+        line-height: 50px;
+    }
+    .header .header-right img{
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
+    .player{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .player .player-section {
+        width: 93%;
+    }
+    .p-4{
+        padding: 4%;
+    }
+    .footer .footer-top img{
+        width: 300px;
+        height: auto;
+        
+    }
+    .season-section{
+        flex-direction: column;
+    }
+    .season-section-left img {
+        width: 250px;
+    }
+    .season-section-right {
+       padding: 0;
+    }
+    .story-inside {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width:1100px){
+    .header-inside{
+        flex-wrap: nowrap;
+    }
+    .header .header-left h1 {
+        width: 300px;
+        height: auto;
+    }
+    
+    .header .header-left h1 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .header .header-right img {
+        width: 45vw;
+        height: auto;
+        margin-top: 40px;
+    }
+    .player {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 1.4%;
+    }
+    .player .player-section {
+        width: 90%;
+    }
+    .season-section-left img {
+        width: 350px;
+        margin-top: 100px;
+    }
+    .season-section-right {
+        padding-right: 0;
+    }
+    .season-section-right h3{
+        font-size: 30px;
+    }
+    .player {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 1.4%;
+    }
+    .season-section-right p{
+        font-size: 14px;
+    }
+    .story{
+        padding: 2%;
+    }
 }
