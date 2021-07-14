@@ -45,11 +45,12 @@ body{
     border: 2px solid #fff;
     color: #fff;
     font-weight: 700;
+    transform: skew(-15deg);
 }
 .header .header-left button:hover i{
     padding-left: 10px;
 }
-.header .header-right{}
+
 .header .header-right img{
     width: 556.01px;
     height: 438px;
@@ -83,11 +84,8 @@ body{
     color: #6C6C6C;
 }
 .player .player-section img{
-    width: 100%;
-    
+    width: 100%;   
 }
-
-
 /* Player section end here */
 
 /* Season start */
@@ -205,9 +203,6 @@ body{
     margin-bottom: 63px;
     
 }
-.footer .footer-top{
-
-}
 .footer .footer-top img{
     width: 483.87px;
     height: 110px;
@@ -224,7 +219,6 @@ body{
     margin: 0px 14px;
     color: #918787;
 }
-
 .footer .footer-bottom{
     font-weight: 400;
     font-size: 18px;
@@ -232,6 +226,7 @@ body{
 
 /* Footer section end */
 
+/* Media query section start */
 
 @media only screen and (max-width: 600px){
     .header-inside{
@@ -327,3 +322,4 @@ body{
         padding: 2%;
     }
 }
+/* Media query section end */
